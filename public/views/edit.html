@@ -1,0 +1,37 @@
+<h2> Edit Contact </h2>
+
+	<form name = 'newContact' novalidate class='form-horizontal'>
+		<div class="form-group">
+	        <label for="firstname" class="control-label col-xs-2">First Name</label>
+	        <div class="col-xs-10">
+	            <input type="text" class="form-control" id="firstname" placeholder="name" ng-model = 'data.firstname'>
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label for="email" class="control-label col-xs-2">Email</label>
+	        <div class="col-xs-10">
+	            <input type="text" class="form-control" id="email" placeholder="email" ng-model = 'data.email'>
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label for="phone" class="control-label col-xs-2">Phone</label>
+	        <div class="col-xs-10">
+	            <input type="text" class="form-control" id="phone" placeholder="name" ng-model = 'data.phone'>
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label for="idea" class="control-label col-xs-2">Idea</label>
+	        <div class="col-xs-10">
+	            <input type="text" class="form-control" name = "idea" id="idea" placeholder="name" ng-model = 'data.ideas_of_users[0].idea'>
+	        </div>
+	    </div>
+	    <div class = 'row form-group'>
+			<div class = 'col-sm-offset-2'>
+				<button class = 'btn btn-primary' ng-click='save()'>Create</button>
+			</div>
+			<div class = 'col-sm-offset-2'>
+				<button class = 'btn btn-primary' ng-click='cancel()'>Cancel</button>
+			</div>
+		</div>
+	</form>
+	{{status}}

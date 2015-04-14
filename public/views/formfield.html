@@ -1,0 +1,6 @@
+<div class = 'row form-group' ng-form="{{field}}" ng-class="{ 'has-error': {{field}}.$dirty && {{field}}.$invalid}">
+	<label class = 'col-sm-2 control-label'>{{field | labelClass }} <span ng-if = 'required'>*</span></label>
+	<div class = 'col-sm-6' ng-switch='required'>
+		<input ng-switch-when = 'true' ng-model='record[field][1]' class = 'form-control' required ng-change='update()' ng-blur='blurUpdate()'/>
+	</div>
+</div>

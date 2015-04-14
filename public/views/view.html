@@ -1,0 +1,31 @@
+<h2> Contact </h2>
+
+	<div class = 'container'>
+		<div class="row">
+	        <label for="firstname" class="control-label col-xs-2">First Name</label>
+	        <div class="col-xs-10">
+	            <p>{{data.firstname}}</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <label for="email" class="control-label col-xs-2">Email</label>
+	        <div class="col-xs-10">
+	            <p>{{data.email}}</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <label for="phone" class="control-label col-xs-2">Phone</label>
+	        <div class="col-xs-10">
+	            <p>{{data.phone}}</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <label for="idea" class="control-label col-xs-2">Idea</label>
+	        <div class="col-xs-10">
+	            <p>{{data.ideas_of_users[0].idea}}</p>
+	        </div>
+	    </div>
+	    <div class = 'col-sm-offset-2'>
+				<button class = 'btn btn-primary' ng-click='cancel()'>Cancel</button>
+		</div>
+	</div>
